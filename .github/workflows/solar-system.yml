@@ -43,6 +43,8 @@ jobs:
             name: Mocha-Test-Result
             path: test-results.xml
     docker:
+      permissions: #added
+        packages: write #added
       name: docker
       runs-on: ubuntu-latest
       steps:
